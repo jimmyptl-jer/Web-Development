@@ -1,0 +1,37 @@
+body {
+  background-color: #99ffff;
+  margin-top: 20px;
+  margin-left: 70px;
+}
+h1 {
+  background-color: #ff6699;
+  border-bottom: 20px #ff0066 solid;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 5px;
+}
+ul {
+  background-color: #ff9933;
+  border-left: 5px rgb(255, 29, 29) dashed;
+  margin: 50px rgb(92, 238, 8);
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+li {
+  color: darkblue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #ffcc66;
+  padding: 10px;
+  border: rgb(189, 1, 142);
+  margin: 10px;
+}
+
+p {
+  background-color: #ccff99;
+  border: 10px white double;
+  padding: 0px;
+}

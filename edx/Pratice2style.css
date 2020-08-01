@@ -1,0 +1,45 @@
+body {
+  background-color: #f4f4f4;
+  font-family: "Lucidia Sans Unicode", sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  color: #c0b283;
+  font-size: 4em;
+  font-weight: 700;
+  font-family: Garamond;
+  width: 300px;
+  padding: 20px;
+  border-left: #c0b283 solid;
+  border-width: 0.01cm;
+}
+
+h2 {
+  font-family: Garamond;
+  background-color: grey;
+  color: lightyellow;
+  font-weight: 500;
+  font-size: 2em;
+  width: 200px;
+  padding: 20px;
+}
+
+p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border: orange dashed;
+  color: black;
+  font-size: 1em;
+  padding-left: 20px;
+}
+
+ol {
+  background-color: #fedcd2;
+  padding: 50px;
+  text-align: left;
+  font-weight: 100;
+
+  border-bottom: 5px #dcb239 solid;
+  font-family: Helvetica, sans-serif;
+}

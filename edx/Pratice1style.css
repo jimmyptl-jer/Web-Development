@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(243, 132, 132);
+  color: teal;
+  box-decoration-break: slice;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+h1 {
+  font-family: Georgia;
+  color: yellow;
+  font-weight: 300;
+  background-color: black;
+  border-left: greenyellow dashed;
+  border-color: indigo;
+  margin-left: 20px;
+  padding: 20px;
+}
+
+h2 {
+  font-family: sans-serif;
+  color: red;
+  font-weight: 100;
+  background-color: yellow;
+  border-left: greenyellow dashed;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+ol {
+  font-family: "Times New Roman";
+  color: black;
+  background-color: yellow;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+P {
+  font-family: Verdana;
+  color: black;
+  background-color: yellow;
+  box-decoration-break: slice;
+  border-left: dashed;
+  padding: 20px;
+  margin: 20px;
+}

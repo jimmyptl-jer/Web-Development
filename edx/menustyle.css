@@ -1,0 +1,40 @@
+div {
+  clear: both;
+  margin-bottom: 50px;
+  padding: 30px;
+  font-family: Arial;
+}
+#ul1 {
+  list-style: none;
+  height: 25px;
+}
+
+#ul2 {
+  list-style-type: circle;
+  border-left: black solid;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  background-color: lightslategrey;
+}
+a {
+  text-decoration: none;
+}
+#menu1 {
+  background-color: #0e0b16;
+}
+#menu1 a {
+  color: #e7dfdd;
+}
+#menu1 li {
+  padding: 10px;
+  float: left;
+}
+#menu1 a:hover {
+  border-bottom: 2px #a239ca solid;
+}
+#menu1 .currentPage {
+  background-color: #a239ca;
+}
+#menu1 .currentPage a {
+  color: #0e0b16;
+}

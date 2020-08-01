@@ -1,0 +1,21 @@
+body {
+  background-color: #f8eee7;
+}
+.id1 {
+  background-color: #f4decb;
+}
+.id2 {
+  background-color: #94618e;
+  color: #f8eee7;
+}
+.id3 {
+  background-color: #49274a;
+}
+.id4 {
+  background-color: #ffffff;
+  color: #49274a;
+}
+.id5 {
+  background-color: #b4dbc0 !important;
+  border: 2px dashed black;
+}

@@ -1,0 +1,102 @@
+body {
+  background-color: lightgrey;
+  font-family: verdana, sans-serif;
+  margin: 10px;
+}
+
+p {
+  border: 1px dotted;
+  background-color: lightgray;
+  color: black;
+  border-left: black solid;
+  padding: 10px;
+}
+
+h1 {
+  color: white;
+  font-size: 3em;
+  font-weight: 800;
+  background-color: black;
+  padding: 20px;
+  border-bottom: 5px white solid;
+  font-family: "times new roman", serif;
+}
+.plain {
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+.citate {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
+  font-weight: 100;
+  border-left: 1px black solid;
+}
+h3 {
+  color: #f2dc8b;
+  font-size: 1.5em;
+  font-family: "times new roman", serif;
+  font-weight: 800;
+  text-decoration: underline;
+}
+li {
+  padding: 10px 10px 10px 10px;
+  font-weight: bold;
+  color: white;
+}
+
+ol {
+  background-color: transparent;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+#hobby {
+  background-color: green;
+  color: white;
+}
+
+section,
+article,
+div {
+  border: 2px solid;
+  background-color: grey;
+  margin-top: 5px;
+  padding-left: 5px;
+  padding-right: 10px;
+  margin-bottom: 5px;
+}
+h4 {
+  border-bottom: 2px solid black;
+  margin-right: 1020px;
+  text-decoration: underline overline dotted yellow;
+  color: #f2dc8b;
+}
+
+.citate:hover {
+  background-color: rgb(3, 3, 3);
+  color: #d40f72;
+  font-size: 0.5 em;
+  border: 1px black solid;
+}
+
+footer {
+  margin-top: 20px;
+}
+a:link {
+  color: white;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: yellow;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+h1:active {
+  color: red;
+}

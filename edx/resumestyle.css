@@ -1,0 +1,142 @@
+body {
+  width: 75em;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: sans-serif;
+}
+
+/*-----HEADER----*/
+header {
+  width: 75em;
+  border-bottom: 5px black solid;
+  float: left;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  float: left;
+}
+
+header p {
+  float: right;
+}
+
+span {
+  color: darkcyan;
+}
+
+/*----BODY----*/
+section p {
+  padding-left: 7px;
+}
+#we {
+  width: 50em;
+  height: 800px;
+  background-color: darkgray;
+  clear: left;
+  margin-bottom: 2px;
+  margin-right: 2px;
+  float: left;
+}
+
+#ob {
+  width: 24em;
+  height: 200px;
+  background-color: lightgray;
+  float: right;
+  margin-bottom: 15px;
+}
+
+#ed {
+  width: 24em;
+  height: 200px;
+  background-color: lightgray;
+  float: right;
+  margin-bottom: 15px;
+}
+
+#ls {
+  width: 24em;
+  height: 370px;
+  background-color: lightgray;
+  float: right;
+  margin-bottom: 15px;
+}
+
+#cw {
+  width: 75em;
+  height: 310px;
+  background-color: darkgray;
+  float: left;
+  clear: both;
+  margin-bottom: 15px;
+}
+section h1 {
+  border-bottom: 2px black solid;
+  margin-left: 5px;
+  margin-bottom: 0em;
+  padding-bottom: 10px;
+}
+
+/*--------year dis--------*/
+
+#year {
+  padding: 10px;
+  width: 100px;
+  height: 721px;
+  margin: 5px;
+  margin-top: 0px;
+  border-right: black solid 2px;
+  float: left;
+}
+
+#year p {
+  text-align: center;
+  width: 90px;
+  height: 90px;
+  position: relative;
+  top: 20px;
+  font-weight: bold;
+}
+
+#dis {
+  padding: 10px;
+  width: 620px;
+  height: 765px;
+  margin: 5px;
+  float: right;
+}
+
+#year1 {
+  padding: 10px;
+  width: 100px;
+  height: 230px;
+  margin: 5px;
+  margin-top: 0px;
+  border-right: black solid 2px;
+  float: left;
+}
+
+#year1 p {
+  text-align: center;
+  width: 90px;
+  height: 90px;
+  position: relative;
+  top: 20px;
+  font-weight: bold;
+}
+
+#dis1 {
+  padding: 5px;
+  width: 64em;
+  height: 260;
+  margin: 1px;
+  float: left;
+}
+
+/*----FOOTER----*/
+
+footer {
+  clear: both;
+  text-align: center;
+}

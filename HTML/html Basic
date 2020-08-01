@@ -1,0 +1,1488 @@
+-HTML Tutorial
+HTML is the standard markup language for Web pages.
+
+With HTML you can create your own Website.
+
+HTML is easy to learn - You will enjoy it!
+
+Examples in Every Chapter
+This HTML tutorial contains hundreds of HTML examples.
+
+With our online HTML editor, you can edit the HTML, and click on a button to view the result.
+
+Example
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+.
+.
+.
+
+--HTML Introduction
+What is HTML?
+HTML is the standard markup language for creating Web pages.
+
+HTML stands for Hyper Text Markup Language
+HTML describes the structure of a Web page
+HTML consists of a series of elements
+HTML elements tell the browser how to display the content
+HTML elements are represented by tags
+HTML tags label pieces of content such as "heading", "paragraph", "table", and so on
+Browsers do not display the HTML tags, but use them to render the content of the page
+
+A Simple HTML Document
+Example
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+Example Explained
+The <!DOCTYPE html> declaration defines this document to be HTML5
+The <html> element is the root element of an HTML page
+The <head> element contains meta information about the document
+The <title> element specifies a title for the document
+The <body> element contains the visible page content
+The <h1> element defines a large heading
+The <p> element defines a paragraph
+------------------------------------------------------------------------
+--The <!DOCTYPE> Declaration
+The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.
+
+It must only appear once, at the top of the page (before any HTML tags).
+
+The <!DOCTYPE> declaration is not case sensitive.
+
+The <!DOCTYPE> declaration for HTML5 is:
+
+<!DOCTYPE html>
+.
+.
+---------------------------------------------------------------------------
+--HTML Links
+HTML links are defined with the <a> tag:
+
+Example
+<a href="https://www.w3schools.com">This is a link</a>
+
+code:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Links</h2>
+<p>HTML links are defined with the a tag:</p>
+
+<a href="https://www.w3schools.com">This is a link</a>
+
+</body>
+</html>
+
+The link's destination is specified in the href attribute. 
+
+Attributes are used to provide additional information about HTML elements.
+---------------------------------------------------------------------------
+--HTML Images
+HTML images are defined with the <img> tag.
+
+The source file (src), alternative text (alt), width, and height are provided as attributes:
+
+Example
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Images</h2>
+<p>HTML images are defined with the img tag:</p>
+
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+
+</body>
+</html>
+-----------------------------------------------------------------------
+--HTML Attributes
+All HTML elements can have attributes
+Attributes provide additional information about an element
+Attributes are always specified in the start tag
+Attributes usually come in name/value pairs like: name="value"
+
+------------------------------------------------------------------------
+--The href Attribute
+HTML links are defined with the <a> tag. The link address is specified in the href attribute:
+
+Example
+<a href="https://www.w3schools.com">This is a link</a>
+You will learn more about links and the <a> tag later in this tutorial.
+-------------------------------------------------------------------------
+--The src Attribute
+HTML images are defined with the <img> tag.
+
+The filename of the image source is specified in the src attribute:
+
+Example
+<img src="img_girl.jpg">
+The width and height Attributes
+ HTML images also have width and height attributes, which specifies the width and height of the image:
+
+Example
+<img src="img_girl.jpg" width="500" height="600">
+The width and height are specified in pixels by default; so width="500" means 500 pixels wide.
+
+You will learn more about images in our HTML Images chapter.
+----------------------------------------------------------------------------
+--The alt Attribute
+The alt attribute specifies an alternative text to be used, if an image cannot be displayed.
+
+The value of the alt attribute can be read by screen readers. This way, someone "listening" to the webpage, e.g. a vision impaired person, can "hear" the element.
+
+Example
+<img src="img_girl.jpg" alt="Girl with a jacket">
+The alt attribute is also useful if the image cannot be displayed (e.g. if it does not exist):
+
+Example
+See what happens if we try to display an image that does not exist:
+
+<img src="img_typo.jpg" alt="Girl with a jacket">
+--------------------------------------------------------------------
+--The style Attribute
+The style attribute is used to specify the styling of an element, like color, font, size etc.
+
+Example
+<p style="color:red">This is a red paragraph.</p>
+You will learn more about styling later in this tutorial, and in our CSS Tutorial.
+-------------------------------------------------------------------------
+--The lang Attribute
+The language of the document can be declared in the <html> tag.
+
+The language is declared with the lang attribute.
+
+Declaring a language is important for accessibility applications (screen readers) and search engines:
+
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+
+...
+
+</body>
+</html>
+The first two letters specify the language (en). If there is a dialect, add two more letters (US).
+------------------------------------------------------------------------------------------------------- 
+The title Attribute
+Here, a title attribute is added to the <p> element. The value of the title attribute will be displayed as a tooltip when you mouse over the paragraph:
+
+Example
+<p title="I'm a tooltip">
+This is a paragraph.
+</p>
+We Suggest: Use Lowercase Attributes
+The HTML5 standard does not require lowercase attribute names.
+
+The title attribute can be written with uppercase or lowercase like title or TITLE.
+
+W3C recommends lowercase in HTML, and demands lowercase for stricter document types like XHTML.
+
+At W3Schools we always use lowercase attribute names.
+
+We Suggest: Quote Attribute Values
+The HTML5 standard does not require quotes around attribute values.
+
+The href attribute, demonstrated above, can be written without quotes:
+
+Bad
+<a href=https://www.w3schools.com>
+Good
+<a href="https://www.w3schools.com">
+W3C recommends quotes in HTML, and demands quotes for stricter document types like XHTML.
+
+Sometimes it is necessary to use quotes. This example will not display the title attribute correctly, because it contains a space:
+
+Example
+<p title=About W3Schools>
+Using quotes are the most common. Omitting quotes can produce errors.
+At W3Schools we always use quotes around attribute values.
+--------------------------------------------------------------------
+Single or Double Quotes?
+Double quotes around attribute values are the most common in HTML, but single quotes can also be used.
+
+In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:
+
+<p title='John "ShotGun" Nelson'>
+Or vice versa:
+
+<p title="John 'ShotGun' Nelson">
+------------------------------------------------------------------
+HTML Attributes
+Below is an alphabetical list of some attributes often used in HTML, which you will learn more about in this tutorial:
+
+Attribute	Description
+alt-Specifies an alternative text for an image, when the image cannot be displayed
+disabled-Specifies that an input element should be disabled
+hre-Specifies the URL (web address) for a link
+id-Specifies a unique id for an element
+src-Specifies the URL (web address) for an image
+style-Specifies an inline CSS style for an element
+title-Specifies extra information about an element (displayed as a tool tip)
+
+------------------------------------------------------------------
+HTML Horizontal Rules
+The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+
+The <hr> element is used to separate content (or define a change) in an HTML page:
+
+Example:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>This is heading 1</h1>
+<p>This is some text.</p>
+<hr>
+
+<h2>This is heading 2</h2>
+<p>This is some other text.</p>
+<hr>
+
+<h2>This is heading 2</h2>
+<p>This is some other text.</p>
+
+</body>
+</html>
+-----------------------------------------------------------------
+HTML Tag Reference
+W3Schools' tag reference contains additional information about these tags and their attributes.
+
+You will learn more about HTML tags and attributes in the next chapters of this tutorial.
+
+Tag	Description
+<html>	Defines the root of an HTML document
+<body>	Defines the document's body
+<head>	A container for all the head elements (title, scripts, styles, meta information, and more)
+<h1> to <h6>	Defines HTML headings
+<hr>	Defines a thematic change in the content
+-----------------------------------------------------------------------
+HTML Line Breaks
+The HTML <br> element defines a line break.
+
+Use <br> if you want a line break (a new line) without starting a new paragraph:
+
+Example:
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This is<br>a paragraph<br>with line breaks</p>
+
+</body>
+</html>
+--------------------------------------------------------------------------
+HTML Tag Reference
+W3Schools' tag reference contains additional information about HTML elements and their attributes.
+
+Tag	Description
+<p>	Defines a paragraph
+<br>	Inserts a single line break
+<pre>	Defines pre-formatted text
+-----------------------------------------------------------------------------
+The HTML Style Attribute
+Setting the style of an HTML element, can be done with the style attribute.
+
+The HTML style attribute has the following syntax:
+
+<tagname style="property:value;">
+The property is a CSS property. The value is a CSS value.
+-----------------------------------------------------------------------------
+Background Color
+The CSS background-color property defines the background color for an HTML element.
+
+This example sets the background color for a page to powderblue:
+
+Example
+<body style="background-color:powderblue;">
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+-----------------------------------------------------------------------------
+Text Color
+The CSS color property defines the text color for an HTML element:
+-=
+Example
+<h1 style="color:blue;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+------------------------------------------------------------------------
+Fonts
+The CSS font-family property defines the font to be used for an HTML element:
+
+Example
+<h1 style="font-family:verdana;">This is a heading</h1>
+<p style="font-family:courier;">This is a paragraph.</p>
+-------------------------------------------------------------------------
+Text Size
+The CSS font-size property defines the text size for an HTML element:
+
+Example
+<h1 style="font-size:300%;">This is a heading</h1>
+<p style="font-size:160%;">This is a paragraph.</p>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="font-size:300%;">This is a heading</h1>
+<p style="font-size:160%;">This is a paragraph.</p>
+
+</body>
+</html>
+
+------------------------------------------------------------------------
+ Text Alignment
+The CSS text-align property defines the horizontal text alignment for an HTML element:
+
+Example
+<h1 style="text-align:center;">Centered Heading</h1>
+<p style="text-align:center;">Centered paragraph.</p>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="text-align:center;">Centered Heading</h1>
+<p style="text-align:center;">Centered paragraph.</p>
+
+</body>
+</html>
+
+
+------
+Chapter Summary
+Use the style attribute for styling HTML elements
+Use background-color for background color
+Use color for text colors
+Use font-family for text fonts
+Use font-size for text sizes
+Use text-align for text alignment
+-------------------------------------------------------------------------
+HTML Formatting Elements
+In the previous chapter, you learned about the HTML style attribute.
+
+HTML also defines special elements for defining text with a special meaning.
+
+HTML uses elements like <b> and <i> for formatting output, like bold or italic text.
+
+Formatting elements were designed to display special types of text:
+
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Small text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+HTML <b> and <strong> Elements
+The HTML <b> element defines bold text, without any extra importance.
+
+Example
+<b>This text is bold</b>
+The HTML <strong> element defines strong text, with added semantic "strong" importance.
+
+Example
+<strong>This text is strong</strong>
+
+HTML <i> and <em> Elements
+The HTML <i> element defines italic text, without any extra importance.
+
+Example
+<i>This text is italic</i>
+The HTML <em> element defines emphasized text, with added semantic importance.
+
+Example
+<em>This text is emphasized</em>
+Note: Browsers display <strong> as <b>, and <em> as <i>. However, there is a difference in the meaning of these tags: <b> and <i> defines bold and italic text, but <strong> and <em> means that the text is "important".
+
+HTML <small> Element
+The HTML <small> element defines smaller text:
+
+Example
+<h2>HTML <small>Small</small> Formatting</h2>
+HTML <mark> Element
+The HTML <mark> element defines marked/highlighted text:
+
+Example
+<h2>HTML <mark>Marked</mark> Formatting</h2>
+HTML <del> Element
+The HTML <del> element defines deleted/removed text.
+
+Example
+<p>My favorite color is <del>blue</del> red.</p>
+HTML <ins> Element
+The HTML <ins> element defines inserted/added text.
+
+Example
+<p>My favorite <ins>color</ins> is red.</p>
+HTML <sub> Element
+The HTML <sub> element defines subscripted text.
+
+Example
+<p>This is <sub>subscripted</sub> text.</p>
+HTML <sup> Element
+The HTML <sup> element defines superscripted text.
+
+Example
+<p>This is <sup>superscripted</sup> text.</p>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This text is normal.</p>
+<i>This text is italic</i>
+<strong>This text is strong</strong>
+<em>This text is emphasized</em>
+<h2>HTML <small>Small</small> Formatting</h2>
+<p><strong>This text is strong.</strong></p>
+<h2>HTML <mark>Marked</mark> Formatting</h2>
+<p>My favorite color is <del>blue</del> red.</p>
+<p>My favorite <ins>color</ins> is red.</p>
+<p>This is <sub>subscripted</sub> text.</p>
+<p>This is <sup>superscripted</sup> text.</p>
+
+</body>
+</html>
+---------------------------------------------------------------------
+HTML <q> for Short Quotations
+The HTML <q> element defines a short quotation.
+
+Browsers usually insert quotation marks around the <q> element.
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Browsers usually insert quotation marks around the q element.</p>
+
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+</body>
+</html>
+----------------------------------------------------------------------------
+HTML <blockquote> for Quotations
+The HTML <blockquote> element defines a section that is quoted from another source.
+
+Browsers usually indent <blockquote> elements.
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Browsers usually indent blockquote elements.</p>
+
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For nearly 60 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by more than one million members in the United States and close to five million globally.
+</blockquote>
+
+</body>
+</html>
+-------------------------------------------------------------------------------------
+HTML <abbr> for Abbreviations
+The HTML <abbr> element defines an abbreviation or an acronym.
+
+Marking abbreviations can give useful information to browsers, translation systems and search-engines.
+
+Example:
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+<p>Marking up abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+
+</body>
+</html>
+-------------------------------------------------------------------------------------
+HTML <address> for Contact Information
+The HTML <address> element defines contact information (author/owner) of a document or an article.
+
+The <address> element is usually displayed in italic. Most browsers will add a line break before and after the element.
+
+Example:
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The HTML address element defines contact information (author/owner) of a document or article.</p>
+
+<address>
+Written by John Doe.<br> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+
+</body>
+</html>
+--------------------------------------------------------------------------------------------
+HTML <cite> for Work Title
+The HTML <cite> element defines the title of a work.
+
+Browsers usually display <cite> elements in italic.
+
+Example:
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The HTML cite element defines the title of a work.</p>
+<p>Browsers usually display cite elements in italic.</p>
+
+<img src="img_the_scream.jpg" width="220" height="277" alt="The Scream">
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+</body>
+</html>
+--------------------
+HTML Quotation and Citation Elements
+Tag	Description
+<abbr>-Defines an abbreviation or acronym
+<address>-Defines contact information for the author/owner of a document
+<bdo>-Defines the text direction
+<blockquote>-Defines a section that is quoted from another source
+<cite>-Defines the title of a work
+<q>-Defines a short inline quotation
+---------------------------------------------------------------------------------------
+HTML Colors
+HTML colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.
+
+Color Names
+In HTML, a color can be specified by using a color name:
+
+Example:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:Tomato;">Tomato</h1>
+<h1 style="background-color:Orange;">Orange</h1>
+<h1 style="background-color:DodgerBlue;">DodgerBlue</h1>
+<h1 style="background-color:MediumSeaGreen;">MediumSeaGreen</h1>
+<h1 style="background-color:Gray;">Gray</h1>
+<h1 style="background-color:SlateBlue;">SlateBlue</h1>
+<h1 style="background-color:Violet;">Violet</h1>
+<h1 style="background-color:LightGray;">LightGray</h1>
+
+</body>
+</html>
+-----------------------------------------------------------------------------------
+Background Color
+You can set the background color for HTML elements:
+
+Example:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+
+<p style="background-color:Tomato;">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+</p>
+
+</body>
+</html>
+---------------------------------------------------------------------------------
+Text Color
+You can set the color of text:
+
+Example:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3 style="color:Tomato;">Hello World</h3>
+
+<p style="color:DodgerBlue;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+<p style="color:MediumSeaGreen;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+</body>
+</html>
+-----------------------------------------------------------------------------------
+Border Color
+You can set the color of borders:
+
+Example:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="border: 2px solid Tomato;">Hello World</h1>
+
+<h1 style="border: 2px solid DodgerBlue;">Hello World</h1>
+
+<h1 style="border: 2px solid Violet;">Hello World</h1>
+
+</body>
+</html>
+----------------------------------------------------------------------------------
+HTML RGB Colors
+RGB Value
+In HTML, a color can be specified as an RGB value, using this formula:
+
+rgb(red, green, blue)
+
+Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.
+
+For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255) and the others are set to 0.
+
+To display black, set all color parameters to 0, like this: rgb(0, 0, 0).
+
+To display white, set all color parameters to 255, like this: rgb(255, 255, 255).
+
+Experiment by mixing the RGB values below:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h1>
+<h1 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h1>
+<h1 style="background-color:rgb(60, 179, 113);">rgb(60, 179, 113)</h1>
+<h1 style="background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</h1>
+<h1 style="background-color:rgb(255, 165, 0);">rgb(255, 165, 0)</h1>
+<h1 style="background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</h1>
+
+<p>In HTML, you can specify colors using RGB values.</p>
+
+</body>
+</html>
+----------------------------------------------------------------------------
+RGBA Value
+RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.
+
+An RGBA color value is specified with:
+
+rgba(red, green, blue, alpha)
+
+The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):
+
+Experiment by mixing the RGBA values below:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h1>
+
+<p>You can make transparent colors by using the RGBA color value.</p>
+
+</body>
+</html>
+----------------------------------------------------------------------------
+HTML HSL Colors
+HSL Value
+In HTML, a color can be specified using hue, saturation, and lightness (HSL) in the form:
+
+hsl(hue, saturation, lightness)
+
+Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+
+Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.
+
+Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white
+
+Experiment by mixing the HSL values below:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+<h1 style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h1>
+<h1 style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h1>
+<h1 style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h1>
+<h1 style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h1>
+<h1 style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h1>
+
+<p>In HTML, you can specify colors using HSL values.</p>
+
+</body>
+</html>
+-------------------------------------------------------------------
+Saturation
+Saturation can be described as the intensity of a color.
+
+100% is pure color, no shades of gray
+
+50% is 50% gray, but you can still see the color.
+
+0% is completely gray, you can no longer see the color.
+
+Example:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+<h1 style="background-color:hsl(0, 80%, 50%);">hsl(0, 80%, 50%)</h1>
+<h1 style="background-color:hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</h1>
+<h1 style="background-color:hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</h1>
+<h1 style="background-color:hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</h1>
+<h1 style="background-color:hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</h1>
+
+<p>With HSL colors, less saturation mean less color. 0% is completely gray.</p>
+
+</body>
+</html>
+------------------------------------------------------------------------
+
+Lightness
+The lightness of a color can be described as how much light you want to give the color, where 0% means no light (black), 50% means 50% light (neither dark nor light) 100% means full lightness (white).
+
+Example:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:hsl(0, 100%, 0%);">hsl(0, 100%, 0%)</h1>
+<h1 style="background-color:hsl(0, 100%, 25%);">hsl(0, 100%, 25%)</h1>
+<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+<h1 style="background-color:hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</h1>
+<h1 style="background-color:hsl(0, 100%, 90%);">hsl(0, 100%, 90%)</h1>
+<h1 style="background-color:hsl(0, 100%, 100%);">hsl(0, 100%, 100%)</h1>
+
+<p>With HSL colors, 0% lightness means black, and 100 lightness means white.</p>
+
+</body>
+</html>
+
+ EXAMPLE:
+ 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:hsl(0, 0%, 0%);">hsl(0, 0%, 0%)</h1>
+<h1 style="background-color:hsl(0, 0%, 24%);">hsl(0, 0%, 24%)</h1>
+<h1 style="background-color:hsl(0, 0%, 47%);">hsl(0, 0%, 47%)</h1>
+<h1 style="background-color:hsl(0, 0%, 71%);">hsl(0, 0%, 71%)</h1>
+<h1 style="background-color:hsl(0, 0%, 94%);">hsl(0, 0%, 94%)</h1>
+<h1 style="background-color:hsl(0, 0%, 100%);">hsl(0, 0%, 100%)</h1>
+
+<p>With HSL colors, shades of gray are made by setting the saturation to 0%, and adjusting the lightness according to how dark/light the gray color should be.</p>
+
+</body>
+</html>
+--------------------------------------------------------------------------------------------------------
+HTML Styles - CSS
+
+Styling HTML with CSS
+CSS stands for Cascading Style Sheets.
+
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
+
+CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+
+CSS can be added to HTML elements in 3 ways:
+
+Inline - by using the style attribute in HTML elements
+Internal - by using a <style> element in the <head> section
+External - by using an external CSS file
+
+-------------------
+Inline CSS
+An inline CSS is used to apply a unique style to a single HTML element.
+
+An inline CSS uses the style attribute of an HTML element.
+
+This example sets the text color of the <h1> element to blue:
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="color:blue;">This is a Blue Heading</h1>
+
+</body>
+</html>
+--------------------
+Internal CSS
+An internal CSS is used to define a style for a single HTML page.
+
+An internal CSS is defined in the <head> section of an HTML page, within a <style> element:
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+----------------------
+External CSS
+An external style sheet is used to define the style for many HTML pages.
+
+With an external style sheet, you can change the look of an entire web site, by changing one file!
+
+To use an external style sheet, add a link to it in the <head> section of the HTML page:
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+An external style sheet can be written in any text editor. The file must not contain any HTML code, and must be saved with a .css extension.
+
+Here is how the "styles.css" looks:
+
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
+---------------------
+CSS Fonts
+The CSS color property defines the text color to be used.
+
+The CSS font-family property defines the font to be used.
+
+The CSS font-size property defines the text size to be used.
+
+Example
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+}
+p  {
+  color: red;
+  font-family: courier;
+  font-size: 160%;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+--------------------------
+CSS Border
+The CSS border property defines a border around an HTML element:
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  border: 5px solid blue;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+---------------------------
+CSS Padding
+The CSS padding property defines a padding (space) between the text and the border:
+
+Example:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  border: 5px solid blue;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+-----------------------------
+CSS Margin
+The CSS margin property defines a margin (space) outside the border:
+
+Example:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  border: 1px solid powderblue;
+  margin: 50px;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+-----------------------
+The id Attribute
+To define a specific style for one special element, add an id attribute to the element:
+
+<p id="p01">I am different</p>
+then define a style for the element with the specific id:
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#p01 {
+  color: blue;
+}
+</style>
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+<p id="p01">I am different.</p>
+
+</body>
+</html>
+---------------------------------- 
+The class Attribute
+To define a style for special types of elements, add a class attribute to the element:
+
+<p class="error">I am different</p>
+then define a style for the elements with the specific class:
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.error {
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+<p class="error">I am different.</p>
+<p>This is a paragraph.</p>
+<p class="error">I am different too.</p>
+
+</body>
+</html>
+----------------------------
+External References
+External style sheets can be referenced with a full URL or with a path relative to the current web page.
+
+This example uses a full URL to link to a style sheet:
+
+Example
+<link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+
+This example links to a style sheet located in the html folder on the current web site:
+
+Example:
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+
+
+<link rel="stylesheet" href="/html/styles.css">
+
+This example links to a style sheet located in the same folder as the current page:
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+---------------------------
+Chapter Summary
+Use the HTML style attribute for inline styling
+Use the HTML <style> element to define internal CSS
+Use the HTML <link> element to refer to an external CSS file
+Use the HTML <head> element to store <style> and <link> elements
+Use the CSS color property for text colors
+Use the CSS font-family property for text fonts
+Use the CSS font-size property for text sizes
+Use the CSS border property for borders
+Use the CSS padding property for space inside the border
+Use the CSS margin property for space outside the border
+-------------------------------------------------------------------------------------------------------------------------
+HTML Links
+Links are found in nearly all web pages. Links allow users to click their way from page to page.
+
+HTML Links - Hyperlinks
+HTML links are hyperlinks.
+
+You can click on a link and jump to another document.
+
+When you move the mouse over a link, the mouse arrow will turn into a little hand.
+
+Note: A link does not have to be text. It can be an image or any other HTML element.
+
+HTML Links - Syntax
+Hyperlinks are defined with the HTML <a> tag:
+
+<a href="url">link text</a>
+Example:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Links</h2>
+<p><a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a></p>
+
+</body>
+</html>
+
+The href attribute specifies the destination address (https://www.w3schools.com/html/) of the link.
+
+The link text is the visible part (Visit our HTML tutorial).
+
+Clicking on the link text will send you to the specified address.
+-------------------
+Local Links
+The example above used an absolute URL (a full web address).
+
+A local link (link to the same web site) is specified with a relative URL (without https://www....).
+
+Example:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Local Links</h2>
+
+<p><a href="html_images.asp">HTML Images</a> is a link to a page on this website.</p>
+
+<p><a href="https://www.w3.org/">W3C</a> is a link to a website on the World Wide Web.</p>
+
+</body>
+</html>
+----------------------
+HTML Links - The target Attribute
+The target attribute specifies where to open the linked document.
+
+The target attribute can have one of the following values:
+
+_blank - Opens the linked document in a new window or tab
+_self - Opens the linked document in the same window/tab as it was clicked (this is default)
+_parent - Opens the linked document in the parent frame
+_top - Opens the linked document in the full body of the window
+framename - Opens the linked document in a named frame
+This example will open the linked document in a new browser window/tab:
+
+Example:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The target Attribute</h2>
+
+<a href="https://www.w3schools.com/html/" target="_blank">Visit our HTML tutorial!</a> 
+
+<p>If you set the target attribute to "_blank", the link will open in a new browser window or tab.</p>
+
+</body>
+</html>
+---------------
+HTML Links - Image as a Link
+It is common to use images as links:
+
+Example:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Image Links</h2>
+
+<p>The image is a link. You can click on it.</p>
+
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0">
+</a>
+
+<p>We have added "border:0" to prevent IE9 (and earlier) from displaying a border around the image.</p>
+
+</body>
+</html>
+----------------------
+Button as a Link
+To use an HTML button as a link, you have to add some JavaScript code.
+
+JavaScript allows you to specify what happens at certain events, such as a click of a button:
+
+Example:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Button as a Links</h2>
+
+<p>Click the button to go to the default page.</p>
+
+<button onclick="document.location = 'default.asp'">HTML Tutorial</button>
+
+</body>
+</html>
+-----------------
+Link Titles
+The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.
+
+Example:
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+
+<h2>Link Titles</h2>
+<p>The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+</body>
+</html>
+
+-------------------
+External Paths
+External pages can be referenced with a full URL or with a path relative to the current web page.
+
+This example uses a full URL to link to a web page:
+
+Example:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>External Paths</h2>
+
+<p>This example uses a full URL to link to a web page:</p>
+<p><a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a></p>
+
+</body>
+</html>
+----------------------
+Chapter Summary
+Use the <a> element to define a link
+Use the href attribute to define the link address
+Use the target attribute to define where to open the linked document
+Use the <img> element (inside <a>) to use an image as a link
+----------------------------------------------------------------------------------------------
+HTML Link Colors
+HTML Link Colors
+By default, a link will appear like this (in all browsers):
+
+An unvisited link is underlined and blue
+A visited link is underlined and purple
+An active link is underlined and red
+You can change the default colors, by using CSS:
+
+Example:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<h2>Link Colors</h2>
+
+<p>You can change the default colors of links</p>
+
+<a href="html_images.asp" target="_blank">HTML Images</a> 
+
+</body>
+</html>
+-------------------
+Link Buttons
+A link can also be styled as a button, by using CSS
+
+Example:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:link, a:visited {
+  background-color: green;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+</head>
+<body>
+
+<h2>Link Button</h2>
+<p>A link styled as a button:</p>
+<a href="www.google.com" target="_blank">This is a link</a>
+
+</body>
+</html>
+---------------------------------------------------------------
+HTML Link Bookmarks
+
+HTML Links - Create a Bookmark
+HTML bookmarks are used to allow readers to jump to specific parts of a Web page.
+
+Bookmarks can be useful if a webpage is very long.
+
+To create a bookmark - first create the bookmark, then add a link to it.
+
+When the link is clicked, the page will scroll down or up to the location with the bookmark.
+
+Example
+First, create a bookmark with the id attribute:
+
+<h2 id="C4">Chapter 4</h2>
+Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:
+
+Example
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p><a href="#C4">Jump to Chapter 4</a></p>
+<p><a href="#C10">Jump to Chapter 10</a></p>
+
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C4">Chapter 4</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 6</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 7</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 8</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 9</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C10">Chapter 10</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 11</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 12</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 13</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 14</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 15</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 16</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 17</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 18</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 19</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 20</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 21</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 22</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 23</h2>
+<p>This chapter explains ba bla bla</p>
+
+</body>
+</html>
+
+-----------------------------------------------------------------------------------------
+HTML Images
+Images can improve the design and the appearance of a web page.
+
+HTML Images Syntax
+In HTML, images are defined with the <img> tag.
+
+The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+
+The src attribute specifies the URL (web address) of the image:
+
+<img src="url">
+The alt Attribute
+The alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+
+The value of the alt attribute should describe the image:
+
+Example	:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Alternative text</h2>
+
+<p>The alt attribute should reflect the image content, so users who cannot see the image gets an understanding of what the image contains:</p>
+
+<img src="img_chania.jpg" alt="Flowers in Chania" width="460" height="345">
+
+</body>
+</html>
+
+
+																																					v

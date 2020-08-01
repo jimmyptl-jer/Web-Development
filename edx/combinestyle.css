@@ -1,0 +1,19 @@
+body {
+  background-color: black;
+}
+
+p {
+  color: red;
+}
+
+section p {
+  color: blue;
+}
+
+ol {
+  list-style-type: upper-roman;
+}
+section ol {
+  color: greenyellow;
+  list-style-type: lower-roman;
+}

@@ -1,0 +1,166 @@
+First steps in Web accessibility
+There are many simple Web accessibility improvements that you can implement and check right away, even when you are new to this topic. Two example excerpts are provided below on this page but you can find more tips and information from W3C/WAI:
+
+Tips for Getting Started with Web Accessibility
+Easy Checks - A First Review of Web Accessibility
+Example 1: Page title
+Good page titles are particularly important for orientation — to help people know where they are and move between pages open in their browser. The first thing screen readers say when the user goes to a different Web page is the page title. In the Web page markup, they are the <title> within the <head>.
+
+Check #1: There is a title that adequately and briefly describes the content of a page, and that it distinguishes the page from other Web pages.
+
+Example:
+
+<head>
+...
+<title>Web Accessibility Initiative (WAI) - home page</title>
+...
+</head>
+Example 2: Image text alternatives ("alt text")
+Text alternatives ("alt text") are a primary way of making visual information accessible, because they can be rendered through any sensory modality (for example, visual, auditory or tactile) to match the needs of the user. Providing text alternatives allows the information to be rendered in a variety of ways by a variety of user agents. For example, a person who cannot see a picture can have the text alternative read aloud using synthesized speech.
+
+Check #2: Every image has alt with appropriate alternative text.
+
+Example: See the W3C logo below. It contains a link that points to the W3C Web site. The text alternative is going to be a brief description of the link target.
+
+W3C web site
+
+<a href="http://w3.org">
+<img src="images/w3c_home.png" width="72" height="48" alt="W3C web site">
+</a>
+
+Essential steps in Web i18n
+ Bookmark this page
+You find below three examples (and checks!) to help you to ensure that your Web page works for people around the world, and to make it work differently for different cultures, where needed. Let's meet the words 'charset' and 'lang', soon to become your favorite markup ;)
+
+Example 1: Character encoding declaration
+A character encoding declaration is vital to ensure that the text in your page is recognized by browsers around the world, and not garbled. You will learn more about what this is, and how to use it as you work through the course.  For now, just ensure that it's always there.
+
+Check #1: There is a character encoding declaration near the start of your source code, and  its value is UTF-8.
+
+Example 1:
+
+<head>
+<meta charset="utf-8"/>
+...
+</head>
+Example 2: Primary language declaration
+For a wide variety of reasons, it's important for a browser to know what language your page is written in, including font selection, text-to-speech conversion, spell-checking, hyphenation and automated line breaking, text transforms, automated translation, and more. You should always indicate the primary language of your page in the <html> tag. Again you will learn how to do this during the course.  You will also learn how to change the language, where necessary, for parts of your document that are in a different language.
+
+Check #2: The HTML tag has a lang attribute which correctly indicates the language of your content.
+
+Example 2: This indicates that the page is in French.
+
+<!doctype html>
+<html lang="fr">
+<head>
+...
+Example 3: Cultural bias
+People around the world don't always understand cultural references that you are familiar with, for example the concept of a 'home run' in baseball, or a particular type of food. You should be careful when using examples to illustrate ideas. Also, people in other cultures don't necessarily identify with pictures that you would recognize, for example, hand gestures can have quite unexpected meanings in other parts of the world, and photos of people in a group may not be representative of populations elsewhere.  When creating forms for capturing personal details, you will quickly find that your assumptions about how personal names and addresses work are very different from those of people from other cultures.
+
+Check #3: If your content will be seen by people from diverse cultures, check that your cultural references will be recognized and that there is no inappropriate cultural bias.
+
+Don't worry!
+The following 7 quick tips summarize some important concepts of international Web design. They will become more meaningful as you work through the course, so come back and review this page at the end.
+
+Encoding: use the UTF-8 (Unicode) character encoding for content, databases, etc. Always declare the encoding.
+Language: declare the language of documents and indicate internal language changes.
+Navigation: on each page include clearly visible navigation to localized pages or sites, using the target language.
+Escapes: use characters rather than escapes (e.g. &#xE1; &#225; or &aacute;) whenever you can.
+Forms: use UTF-8 on both form and server. Support local formats of names/addresses, times/dates, etc.
+Localizable styling: use CSS styling for the presentational aspects of your page. So that it's easy to adapt content to suit the typographic needs of the audience, keep a clear separation between styling and semantic content, and don't use 'presentational' markup.
+Images, animations & examples: if your content will be seen by people from diverse cultures, check for translatability and inappropriate cultural bias.
+
+HTML5 structural elements with descriptions.
+HTML5 element	Description
+<header>	Introduction of "sectioning elements": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long <article> or of a long <section>
+<footer>	Contains the footer of a site, a long <article>, or a long <section>
+<nav>	Section that contains the main navigation links (within the document or to other pages).
+<article>	
+Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.
+
+<section>	
+Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article. Generally used with a header.
+
+<time>	Used for marking up times and dates.
+<aside>	Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.
+<figure> and <figcaption>	Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.
+<main>	The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. There can be only one <main> element in a document.
+And there is no <content> element even though the <div class="content"> was very popular. Instead, the HTML5 group decided that anything not embedded in one of the elements from the above table is "default content". If the content is of a type that corresponds to one of the elements from the table, i.e. if the content is an article, it should be embedded between <article> and </article>.
+
+
+
+
+
+Headings and structural elements 
+We will now present some best practices for starting to use <section>, <article>, <nav>, <aside>, in particular concerning the use of headings (H1, H2, H3, H4, H5 and H6).
+
+Use <H1>...<H6> for the headings, as you have done with html4...
+Since the very beginning, HTML has had heading elements: <h1>..<h6>. These elements are used to display headings with different sizes by default, when no CSS is used.  The following example shows 6 sentences that are surrounded by <h1>, <h2>, <h3>, <h4>, <h5> and <h6>:
+
+This is a H1 heading
+This is a H2 heading
+This is a H3 heading
+This is a H4 heading
+This is a H5 heading
+This is a H6 heading
+These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define an outline of the document. To illustrate this, we have used a browser extension. Here is the result for the previous example:
+
+outline of previous example
+
+In the above outline, note that we have only used H1...H6 elements, without any new HTML5 structural elements such as <section> or <article>.
+
+Here is a list of browser extensions you can try, for visualizing the outline of a document: Google HTML5 outliner, or the HTML5 Outliner Opera Extension or this Firefox extension.
+
+Using headings and new sectioning elements (section, article, aside, nav)
+Definition of heading content and sectioning content
+The <section>, <article>, <nav> and <aside> elements are called "sectioning elements". They cut a document into slices we call "sections".
+
+The HTML5 specification says that "each sectioning element potentially has a heading and has also an outline associated".
+
+<h1>...<h6> are called headings, and define the header of a section (whether explicitly marked up using sectioning content elements, or implied by the heading content itself). This means that:
+
+<body>
+    <h1>Title of my document</h1>
+    ...
+</body>
+... defines the header of a section implicitly, while:
+
+<body>
+   ...
+   <section>
+      <h1>Title of my section</h1>
+      ...
+   </section>
+</body>
+... defines the heading of the explicit section (its parent element <section>).
+
+Use multiple headings of different rank with sectioning content
+The first element of a heading content in an element of sectioning content represents the heading for that section (the <section><h1>...</h1></section> in the above example).
+
+Subsequent headings of equal or higher rank start new (implied) sections, headings of lower rank start implied subsections that are part of the previous one. In both cases, the element represents the heading of the implied section.
+
+Let's clarify this by looking at some example code:
+
+<body>
+<section>
+    <h1>This H1 is the heading of an explicit section</h1>
+    ...
+       <h2>This H2 is a subheading, part of the same section
+           (lower rank)</h2>
+            ....
+    <h1>This H1 starts an implicit new section in the explicit
+        section (equal or higher rank)</h1>
+        ...
+        <h2>This is a H2 heading in the new section that has
+            just started</h2>
+            ...
+</section>
+</body>
+The corresponding outline is:
+
+outline of previous example
+
+ In the above example, please note two things:
+
+The outline shows an "Untitled body" at the root of the hierarchy,
+The default size for the H1 and H2 is the same (!). Indeed, when we start a <h1> inside a <section> the browser lowers its default size automatically, as if a new hierarchy level has been added artificially. We will discuss this further in the following sections, as we introduce some best practices.

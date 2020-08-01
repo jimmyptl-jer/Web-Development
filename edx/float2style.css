@@ -1,0 +1,42 @@
+body {
+  background-color: #4abdac;
+  color: #ffffff;
+  font-family: Georgia, serif;
+}
+header {
+  background-color: #f7b733;
+  height: 50px;
+  padding: 20px;
+  margin-bottom: 50px;
+  border-bottom: black dashed;
+}
+
+h1 {
+  padding: 15px;
+}
+#navigation {
+  display: inline-block;
+  height: 30px;
+  width: 30%;
+}
+
+#navigation li:hover {
+  border-bottom: 1px #fc4a1a solid;
+}
+#content {
+  background-color: #dfdce3;
+  width: 50%;
+  margin: 0 auto;
+}
+div {
+  background-color: #fc4a1a;
+  width: 250px;
+  height: 150px;
+  padding: 10px;
+  margin: 20px;
+}
+
+#toRight {
+  float: left;
+  align-self: left;
+}
